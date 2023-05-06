@@ -23,9 +23,9 @@ Human brain morphology undergoes complex developmental changes with diverse regi
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey)](http://creativecommons.org/licenses/by-nc-sa/4.0/)  
 
-All data and code in this repository are licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+Content of this repository is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-Please cite both the publication and the dataset (Zenodo) when using data from this repository. Also, note that several data that is included in this repository requires direct citation if used in other context. This applies to all PET imaging and mRNA expression data and to the normative model by Rutherford et al. Please see the manuscript and the supplementary material for references.
+Please cite both the publication and the dataset (Zenodo) when using data from this repository. Also, note that third-party data included in this repository requires direct citation if used in other contexts. This applies to all PET imaging and mRNA expression data and to the normative model by Rutherford et al. Please see the manuscript and the supplementary material for references.
 
 ## Content
 
@@ -39,7 +39,7 @@ Contains the data used as "predictors" in spatial association analyses. I.e, you
 Contains the [Braincharts model](https://github.com/predictive-clinical-neuroscience/braincharts) by Rutherford et al. (2022).
 
 ### `data_rutherford`
-Contains the data that were extracted from the Braincharts model to be used for the analyses. The output data of the spatial association analyses performed in "1_predictions_rutherford.ipynb", wrapped into JuSpyce objects, are relatively large (~300 MB per file). Admittedly, this is in part due to inefficient storage and will be fixed in the future. As the data can't be included in a GitHub repo, they are available in a separate [OSF repository](https://osf.io/ytvkh/). There is a code block in the respective notebook that automatically downloads the data from OSF if you uncomment it.  
+Contains the data that were extracted from the Braincharts model to be used for the analyses. The output data of the spatial association analyses performed in "1_predictions_rutherford.ipynb", wrapped into JuSpyce objects, are relatively large (~300 MB per file). Admittedly, this is in part due to inefficient storage and will be fixed in the future. As the data can't be included in a GitHub repo, they are available in a separate [OSF repository](https://osf.io/3n9rt/). There is a code block in the respective notebook that automatically downloads the data from OSF if you uncomment it.  
 
 ### `data_ABCD-IMGN`
 This is empty and would contain the ABCD and IMAGEN in- and output data. These data are protected and thus not included in the repository. If you would like to access the data AND already have ABCD or IMAGEN access approval, feel free to contact us. The code, however, is included in this repository. See also the notes in each notebook.  
