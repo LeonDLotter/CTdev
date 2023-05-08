@@ -8,8 +8,10 @@ This repository accompanies the preprint:
 
 Leon D. Lotter, Amin Saberi, Justine Y. Hansen, Bratislav Misic, Gareth J. Barker, Arun L.W. Bokde, Sylvane Desrivières, Herta Flor, Antoine Grigis, Hugh Garavan, Penny Gowland, Andreas Heinz, Rüdiger Brühl, Jean-Luc Martinot, Marie-Laure Paillère, Eric Artiges, Dimitri Papadopoulos Orfanos, Tomáš Paus, Luise Poustka, Sarah Hohmann, Juliane H. Fröhner, Michael N. Smolka, Nilakshi Vaidya, Henrik Walter, Robert Whelan, Gunter Schumann, IMAGEN Consortium, Frauke Nees, Tobias Banaschewski, Simon B. Eickhoff, and Juergen Dukart (2023). *[Human cortex development is shaped by molecular and cellular brain systems](https://doi.org/XXX)*. bioRxiv.
 
-[![DOI](https://img.shields.io/badge/bioRxiv-10.1101/2023.05.05.539537-BD2736)](https://doi.org/10.1101/2023.05.05.539537)  
+[![DOI](https://img.shields.io/badge/bioRxiv-10.1101/2023.05.05.539537-BD2736)](https://doi.org/10.1101/2023.05.05.539537)
 [![DOI](https://zenodo.org/badge/636815203.svg)](https://zenodo.org/badge/latestdoi/636815203)
+[![Twitter](https://img.shields.io/badge/Twitter-Thread-1A8CD8)](https://twitter.com/LeonDLotter/status/1655582681613189120)
+[![Mastodon](https://img.shields.io/badge/Mastodon-Thread-6364FF)](https://neuromatch.social/@LeonDLotter/110332987427316809)  
 
 ## Abstract
 
