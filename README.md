@@ -32,7 +32,7 @@ Please cite both the publication and the dataset (Zenodo) when using data from t
 ## Content
 
 ### `Jupyter notebooks`
-The Jupyter notebooks contain all the analyses code in sequential order. The analyses are finalized but I will update the notebooks with more detailed descriptions and in-line comments of each analysis step.
+The Jupyter notebooks contain all the analyses code in sequential order. The code is largely commented, but gets quite complex towards the end of the workflow. Feel free to ask me questions if you try to work with it and got stuck.
 
 ### `data_predictors`
 Contains the data used as "predictors" in spatial association analyses. I.e, you can find the original PET imaging and extracted data, lists of cell marker genes and extracted ABA gene expression data, and an T1/T2 ratio MRI surface file as a myelination marker. In table files, you find the extracted and dimensionality reduced data that was used for the majority of the analyses.  
