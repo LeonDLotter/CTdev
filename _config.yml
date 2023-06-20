@@ -1,0 +1,5 @@
+exclude: 
+  - model_rutherford
+  - data_ABCD-IMGN
+  - data_rutherford
+  - data_predictors
