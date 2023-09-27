@@ -47,14 +47,12 @@ dependencies:
   - ncurses=6.3=hca72f7f_2
   - nest-asyncio=1.5.4=pyhd8ed1ab_0
   - numexpr=2.8.1=py39h2e5f0a9_0
-  - numpy-base=1.21.2=py39he0bd621_0
   - openpyxl=3.0.9=pyhd3eb1b0_0
   - openssl=1.1.1t=hfd90126_0
   - packaging=21.3=pyhd3eb1b0_0
   - parso=0.8.3=pyhd8ed1ab_0
   - pexpect=4.8.0=pyh9f0ad1d_2
   - pickleshare=0.7.5=py_1003
-  - pip=21.2.4=py39hecd8cb5_0
   - prompt-toolkit=3.0.27=pyha770c72_0
   - psutil=5.9.0=py39h89e85a6_0
   - ptyprocess=0.7.0=pyhd3deb0d_0
@@ -94,6 +92,7 @@ dependencies:
     - bcrypt==3.2.0
     - bctpy==0.5.2
     - beautifulsoup4==4.10.0
+    - biothings-client==0.3.0
     - bleach==4.1.0
     - boto==2.49.0
     - brainsmash==0.11.0
@@ -107,6 +106,7 @@ dependencies:
     - charset-normalizer==2.0.12
     - citeproc-py==0.6.0
     - cognitiveatlas==0.1.9
+    - contourpy==1.1.0
     - cryptography==36.0.2
     - cython==0.29.32
     - datalad==0.17.10
@@ -133,13 +133,14 @@ dependencies:
     - imageio==2.22.0
     - imagesize==1.3.0
     - importlib-metadata==5.2.0
+    - importlib-resources==6.0.0
     - indexed-gzip==1.6.13
     - ipython-genutils==0.2.0
     - ipywidgets==7.7.0
     - iso8601==1.1.0
     - jaraco-classes==3.2.3
     - jinja2==3.1.1
-    - joblib==1.1.0
+    - joblib==1.3.1
     - jsonschema==4.4.0
     - jupyterlab-pygments==0.1.2
     - jupyterlab-widgets==1.1.0
@@ -158,6 +159,7 @@ dependencies:
     - msgpack==1.0.4
     - multidict==6.0.2
     - multiprocess==0.70.12.2
+    - mygene==3.2.2
     - nbclient==0.5.13
     - nbconvert==6.4.5
     - nbformat==5.2.0
@@ -169,10 +171,10 @@ dependencies:
     - nimare==0.0.11
     - nodeenv==1.7.0
     - notebook==6.4.10
-    - numpy==1.22.3
+    - numpy==1.20.3
     - osfclient==0.0.5
     - outdated==0.2.2
-    - pandas==1.4.1
+    - pandas==1.5.3
     - pandas-flavor==0.3.0
     - pandocfilters==1.5.0
     - paramiko==2.10.3
@@ -181,6 +183,7 @@ dependencies:
     - pcntoolkit==0.26
     - pillow==9.1.0
     - pingouin==0.5.3
+    - pip==23.2.1
     - platformdirs==2.6.0
     - plotbin==3.1.3
     - pre-commit==3.1.0
@@ -199,12 +202,13 @@ dependencies:
     - python-gitlab==3.12.0
     - pytz==2022.1
     - pytz-deprecation-shim==0.1.0.post0
+    - pywavelets==1.4.1
     - pyyaml==6.0
     - requests==2.27.1
     - requests-toolbelt==0.10.1
     - rpy2==3.5.2
     - scikit-learn==1.0.2
-    - scikit-misc==0.1.4
+    - scikit-misc==0.3.0
     - scipy==1.8.0
     - seaborn==0.11.0
     - send2trash==1.8.0
@@ -247,6 +251,7 @@ dependencies:
     - wrapt==1.14.1
     - wslink==1.5.3
     - xarray==2022.3.0
+    - xlrd==2.0.1
     - yarl==1.7.2
     - zipp==3.8.0
 prefix: /Users/llotter/opt/anaconda3/envs/ntdev

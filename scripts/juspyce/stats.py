@@ -113,8 +113,10 @@ def beta(x, y, r2=False, adj_r2=True, intercept=False):
     X = np.c_[x, np.ones(x.shape[0])] 
     beta = np.linalg.pinv((X.T).dot(X)).dot(X.T.dot(y))
 
-    returns = (beta[:-1].flatten(),)
-    
+    returns = beta[:-1].flatten()
+    if r2 | intercept:
+        returns = (returns,)
+        
     if r2:
         y_hat = np.dot(X, beta)
         ss_res = np.sum((y-y_hat)**2)       

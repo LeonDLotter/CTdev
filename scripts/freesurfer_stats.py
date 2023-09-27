@@ -3,7 +3,10 @@ import os
 from os.path import join
 
 
-def get_cx_stats(file, hemi, measure=["ThickAvg", "SurfArea", "GrayVol"], suffix=["_thickness", "_area", "_volume"]):
+def get_cx_stats(file, hemi, 
+                 measure=["ThickAvg", "SurfArea", "GrayVol"], 
+                 suffix=["_thickness", "_area", "_volume"],
+                 get_globals=True):
     
     with open(file) as f:
         lines = f.readlines()
@@ -23,13 +26,15 @@ def get_cx_stats(file, hemi, measure=["ThickAvg", "SurfArea", "GrayVol"], suffix
                     file,
                     delim_whitespace=True,
                     names=columns,
-                    comment="#")
+                    comment="#"
+                )
                 data = data.set_index("StructName")
                 data = data[measure]
                 idx = [f"{hemi}_{idx}{suffix[i]}" for i in range(len(measure)) for idx in data.index]
                 data = pd.concat([data[c] for c in data.columns])
                 data.index = idx
-                data = pd.concat([data, pd.Series(global_metrics)])
+                if get_globals:
+                    data = pd.concat([data, pd.Series(global_metrics)])
                 break
     f.close() 
     return data

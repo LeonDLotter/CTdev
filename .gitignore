@@ -9,6 +9,7 @@ _archive/
 # files excluded bc data protection
 #data_ABCD-IMGN/* 
 data_predictors/pet/GABAa-flumazenil-10-kaulen2022.nii.gz 
+data_predictors/pet/mGluR5-abp688-13-kaulen2022.nii.gz
 
 # files excluded bc file size: on OSF instead
 data_rutherford/juspyce_ct_dominance*
