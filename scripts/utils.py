@@ -61,3 +61,29 @@ def add_to_str(string, prefix="", suffix="", delim=""):
         return prefix + delim + string + delim + suffix
     elif isinstance(string, (list, pd.Index)):
         return [prefix + delim + s + delim + suffix for s in string]
+    
+
+def rename_myelin(data, name="mr1-Microstructure"):
+    
+    if isinstance(data, str):
+        if "myelin" in data:
+            data = name
+            
+    elif isinstance(data, list):
+        data_out = list()
+        for l in data:
+            if "myelin" in l:
+                data_out.append(name)
+            else:
+                data_out.append(l)
+            data = data_out
+
+    elif isinstance(data, (pd.Series)):
+        data.index = [i if "myelin" not in i else name for i in data.index]
+        
+    elif isinstance(data, (pd.DataFrame)):
+        data.index = [i if "myelin" not in i else name for i in data.index]
+        data.columns = [i if "myelin" not in i else name for i in data.columns]
+        
+    return data
+
