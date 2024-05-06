@@ -737,6 +737,7 @@ class JuSpyce:
                 lgr.critical(f"Null map generation method '{null_method}' not defined!")
          
         ## define null prediction function for parallelization
+        
         def null_predict(i_null):
              
             # case X nulls

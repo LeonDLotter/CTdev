@@ -1,6 +1,8 @@
 import pandas as pd
 import os
 from os.path import join
+from tqdm.auto import tqdm
+from joblib import Parallel, delayed
 
 
 def get_cx_stats(file, hemi, 
@@ -94,11 +96,12 @@ def get_euler(file):
     return en
 
 
-def collect_fs_stats(subs_dir, subs, parc="destrieux", verbose=True, return_as_df=True):
+def collect_fs_stats(subs_dir, subs, parc="destrieux", verbose=True, progress=True, 
+                     return_as_df=True, n_proc=-1):
 
     subs_data = dict()
-
-    for sub in subs:
+        
+    def par_fun(sub):
         
         sub_data = list()
         
@@ -126,11 +129,26 @@ def collect_fs_stats(subs_dir, subs, parc="destrieux", verbose=True, return_as_d
                 
         # collect data
         if sub_data != []:
-            subs_data[sub] = pd.concat(sub_data) #.drop_duplicates()
+            return pd.concat(sub_data) #.drop_duplicates()
+        else:
+            return None
+        
+    subs_data = Parallel(n_proc)(
+        delayed(par_fun)(sub) 
+        for sub in tqdm(subs, desc="Subjects/Sessions", disable=not progress)
+    )
+    subs_data = {sub: subs_data[i] for i, sub in enumerate(subs) if subs_data[i] is not None} 
         
     # collect data
     if return_as_df:
-        subs_data = pd.DataFrame(subs_data).T
+        cols = set()
+        for sub in subs_data:
+            cols.update(set(subs_data[sub].index.to_list()))
+        subs_df = pd.DataFrame(index=subs_data.keys(), columns=list(cols))
+        for sub in subs_data:
+            cols = subs_data[sub].index.unique()
+            subs_df.loc[sub, cols] = subs_data.loc[:, ~subs_data.columns.duplicated()][cols]
+        #subs_data = pd.DataFrame(subs_data).T
         subs_data = subs_data.loc[:, ~subs_data.columns.duplicated()]
         new_col_order = \
             ["lh_en", "rh_en", "total_en"] + \
@@ -138,9 +156,9 @@ def collect_fs_stats(subs_dir, subs, parc="destrieux", verbose=True, return_as_d
             [c for c in subs_data.columns if c.endswith("_area")] + \
             [c for c in subs_data.columns if c.endswith("_volume")]
         new_col_order = new_col_order + [c for c in subs_data.columns if c not in new_col_order]
-        subs_data = subs_data[new_col_order]
-    
-    return subs_data
+        subs_data = subs_data[[c for c in new_col_order if c in subs_data]]
+    else:
+        return subs_data
 
 
 
