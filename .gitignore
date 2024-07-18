@@ -16,6 +16,9 @@ data_rutherford/juspyce_ct_dominance*
 data_rutherford/juspyce_ct_mlr*
 data_rutherford/juspyce_ct_slr*
 
+# files excluded bc file size: not on OSF, regenerate locally
+data_predictors/null_factors_destrieux.pkl.gz
+
 # OSF project access token
 .osfcli.config
 
