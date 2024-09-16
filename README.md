@@ -8,7 +8,7 @@ This repository accompanies the paper:
 
 Leon D. Lotter, Amin Saberi, Justine Y. Hansen, Bratislav Misic, Casey Paquola, Gareth J. Barker, Arun L.W. Bokde, Sylvane Desrivières, Herta Flor, Antoine Grigis, Hugh Garavan, Penny Gowland, Andreas Heinz, Rüdiger Brühl, Jean-Luc Martinot, Marie-Laure Paillère, Eric Artiges, Dimitri Papadopoulos Orfanos, Tomáš Paus, Luise Poustka, Sarah Hohmann, Juliane H. Fröhner, Michael N. Smolka, Nilakshi Vaidya, Henrik Walter, Robert Whelan, Gunter Schumann, IMAGEN Consortium, Frauke Nees, Tobias Banaschewski, Simon B. Eickhoff, and Juergen Dukart (2024). *[Regional patterns of human cortex development correlate with underlying neurobiology](https://doi.org/10.1038/s41467-024-52366-7)*. Nature Communications.
 
-[![DOI](https://img.shields.io/badge/Nature_Communications-10.1038/s41467--024--52366--7-E63323)](https://doi.org/10.1101/2023.05.05.539537)
+[![DOI](https://img.shields.io/badge/Nature_Communications-10.1038/s41467--024--52366--7-E63323)](https://doi.org/10.1038/s41467-024-52366-7)
 [![DOI](https://img.shields.io/badge/bioRxiv-10.1101/2023.05.05.539537-BD2736)](https://doi.org/10.1101/2023.05.05.539537)
 [![DOI](https://zenodo.org/badge/636815203.svg)](https://zenodo.org/badge/latestdoi/636815203)
 [![Twitter](https://img.shields.io/badge/Twitter-Thread-1A8CD8)](https://twitter.com/LeonDLotter/status/1655582681613189120)
